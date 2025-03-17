@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Sketsa Ramadhan';
+    src: url('./assets/font/SketsaRamadhan.otf') format('truetype');
+}
+
+.arabic-look {
+    font-family: 'Sketsa Ramadhan', sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    color: #ffffff; /* Adjust color */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    background-color: #000000;
+
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .nav-link span {
+        font-weight:bold;
+    }
+
+    .navbar-toggler-icon {
+        filter: invert(1); /* Converts white to black */
+    }
+    
+}
+
+main {
+    background-color: whitesmoke;
+
+    .carousel {
+        margin-top: 5rem;
+    }
+
+    #menu h2{
+        font-family: 'Sketsa Ramadhan', sans-serif;
+        font-size: 34px;
+        text-align: center;
+    }
+
+    #menu img {
+        height: 240px;
+        object-fit: cover;
+    }
+}
+
+footer {
+    .heros {
+        img {
+        width: 120px;
+        border-radius: 50%;
+    }
+    .name {
+        margin: 6px 0 0 0;
+        font-size: 18px;
+        font-weight: 500;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    }
+
+    .role {
+        margin: 0;
+        color: rgba(250, 235, 215, 0.889);
+        font-size: 17px;
+        font-weight: 500;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}
+
+    .footer-order p img {
+        width: 35px;
+    }
+
+    .online-orders {
+        svg {
+            width: 35px;
+            cursor: pointer;
+        }
+
+        img {
+            width: 45px;
+            cursor: pointer;
+        }
+    }
+
+    .footer-about a {
+        text-decoration: none;
+        
+        span{
+        color: #ffffff;
+        
+        font-size: 18px;
+        font-weight: 500;
+        }
+    }
+
+    .footer-contact p {
+        margin: 0;
+    }
+
+    .credits a {
+        color: gold;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+}
+
+
+
+.carousel-inner img {  /* Make images fit carousel width */
+    width: 90%; /* Set a fixed max width */
+    height: 700px; /* Set a fixed height */
+    object-fit: fill; /* Ensures uniform size without distortion */
+    margin: auto; /* Centers the images */
+}
+/* ✅ Adjust size for tablets */
+@media (max-width: 1024px) {
+    .carousel-inner img {
+        width: 95%;
+        height: 600px;
+    }
+}
+
+/* ✅ Adjust size for mobile screens */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        width: 100%;
+        height: 520px;
+    }
+}
+
+/* ✅ Adjust size for very small screens */
+@media (max-width: 480px) {
+    .carousel-inner img {
+        width: 100%;
+        height: 380px;
+    }
+}
