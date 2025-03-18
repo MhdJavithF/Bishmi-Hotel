@@ -57,9 +57,18 @@ main {
         margin-top: 5rem;
     }
 
-    #menu h2{
+    #menu h2 {
         font-family: 'Sketsa Ramadhan', sans-serif;
         font-size: 38px;
+        color: #000000;
+        text-align: center;
+    }
+
+    #menu h3 {
+        font-family: 'Sketsa Ramadhan', sans-serif;
+        font-size: 30px;
+        color: #000000;
+        opacity: 0.85;
         text-align: center;
     }
 
