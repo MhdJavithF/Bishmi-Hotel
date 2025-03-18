@@ -8,7 +8,8 @@
     font-size: 34px;
     font-weight: 500;
     letter-spacing: 2.5px;
-    color: #ffffff; /* Adjust color */
+    color: #ffffff;
+    margin-left: 8px;
 }
 
 body {
@@ -16,9 +17,17 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
 nav {
     background-color: #000000;
 
+    .navbar-nav a:hover {
+        transform: scale(1.1); 
+        font-weight: 600;
+        color: gold;
+        transition: color 0.3s ease-in-out;
+    }    
+    
     .navbar-brand {
         display: flex;
         justify-content: center;
@@ -26,8 +35,9 @@ nav {
     }
 
     .nav-link {
-        font-size: large;
+        font-size: 16px;
         font-weight: 500;
+        color: #ffffff;
     }
 
     .nav-link span {
@@ -58,6 +68,16 @@ main {
         object-fit: cover;
     }
 
+    .card:hover {
+        transform: scale(1.05); 
+        transition: 0.3s;
+    }
+
+    .card img:hover {
+        transform: scale(0.98); 
+        transition: 0.3s;
+    }
+
     .card h4 {
         color: #463e3e;
         font-size: 18px;
@@ -67,6 +87,11 @@ main {
 
     .card h5 {
         font-size: 16px;
+    }
+
+    .card h5:hover {
+        transform: scale(1.1);
+        font-weight: bold;
     }
 }
 
@@ -134,7 +159,7 @@ footer {
 
 
 .carousel-inner img {  /* Make images fit carousel width */
-    width: 90%; /* Set a fixed max width */
+    width: 80%; /* Set a fixed max width */
     height: 700px; /* Set a fixed height */
     object-fit: fill; /* Ensures uniform size without distortion */
     margin: auto; /* Centers the images */
