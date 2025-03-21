@@ -22,7 +22,7 @@ nav {
     background-color: #000000;
 
     .navbar-nav a:hover {
-        transform: scale(1.1); 
+        transform: scale(0.9); 
         font-weight: 600;
         color: gold;
         transition: color 0.3s ease-in-out;
